@@ -1,0 +1,11 @@
+apiVersion: mallweb.mall.com/v1
+kind: MallWeb
+metadata:
+  name: mallweb-sample
+spec:
+  image: nginx:latest
+  port: 30003
+  singlePodsQPS: 600
+  totalQPS: 1200
+
+  # TODO(user): Add fields here

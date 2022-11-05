@@ -1,0 +1,20 @@
+# permissions for end users to view mallwebs.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: mallweb-viewer-role
+rules:
+- apiGroups:
+  - mallweb.mall.com
+  resources:
+  - mallwebs
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - mallweb.mall.com
+  resources:
+  - mallwebs/status
+  verbs:
+  - get

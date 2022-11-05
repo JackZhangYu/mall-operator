@@ -1,0 +1,24 @@
+# permissions for end users to edit mallwebs.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: mallweb-editor-role
+rules:
+- apiGroups:
+  - mallweb.mall.com
+  resources:
+  - mallwebs
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - mallweb.mall.com
+  resources:
+  - mallwebs/status
+  verbs:
+  - get

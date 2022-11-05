@@ -1,0 +1,12 @@
+{
+    "workbench.colorCustomizations": {
+        "sideBarSectionHeader.background": "#0a0e14",
+            "sideBarSectionHeader.border": "#0a0e14",
+            "sideBarSectionHeader.foreground": "#9a9aa0",
+            "sideBarTitle.foreground": "#babbbd",
+        "statusBar.foreground": "#cfd0d4",
+        "tab.inactiveForeground": "#e1e1e6",
+        "icon.foreground": "#c7cdd3",
+        "foreground": "#8383a1",//就是这一行
+        
+}
