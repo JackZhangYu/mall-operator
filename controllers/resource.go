@@ -47,7 +47,7 @@ func getExpectReplicas(mallWeb *v1.MallWeb) int32 {
 	return replicas
 }
 
-// If not exist service,create it.
+// CreateServiceIfNotExists If not exist service,create it.
 func CreateServiceIfNotExists(ctx context.Context, r *MallWebReconciler, mallWeb *v1.MallWeb, req ctrl.Request) error {
 	logger := log.FromContext(ctx)
 
